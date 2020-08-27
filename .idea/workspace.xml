@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7cfb51c1-d17f-4f52-8e82-d5bb53db5ef3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myblock/proofToWord.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/block.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/blockchain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/pow.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gfjiWBsDh3JCdjJxvokirYJ8OG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/block" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myblock" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/block" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build blockchain/myblock" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="blockchain" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/myblock/pow.go" />
+      <package value="blockchain/myblock" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build blockchain/myblock" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598516410178">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state x="184" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.791@0.23.1440.791" timestamp="1598516410178" />
+    <state x="417" y="65" key="#go_build_blockchain/block" timestamp="1598516190499">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state x="417" y="65" key="#go_build_blockchain/block/0.23.1440.791@0.23.1440.791" timestamp="1598516190499" />
+    <state x="417" y="65" key="#go_build_blockchain/myblock" timestamp="1598516473830">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state x="417" y="65" key="#go_build_blockchain/myblock/0.23.1440.791@0.23.1440.791" timestamp="1598516473830" />
+    <state x="417" y="65" key="#go_build_blockchain/myblock_(1)" timestamp="1598516402342">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state x="417" y="65" key="#go_build_blockchain/myblock_(1)/0.23.1440.791@0.23.1440.791" timestamp="1598516402342" />
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom" timestamp="1598516477921">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.791@0.23.1440.791" timestamp="1598516477921" />
+    <state width="1398" height="202" key="GridCell.Tab.0.center" timestamp="1598516477920">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.791@0.23.1440.791" timestamp="1598516477920" />
+    <state width="1398" height="202" key="GridCell.Tab.0.left" timestamp="1598516477919">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.791@0.23.1440.791" timestamp="1598516477919" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right" timestamp="1598516477920">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.791@0.23.1440.791" timestamp="1598516477920" />
+    <state x="229" y="57" key="SettingsEditor" timestamp="1598516467333">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state x="229" y="57" key="SettingsEditor/0.23.1440.791@0.23.1440.791" timestamp="1598516467333" />
+  </component>
+</project>
