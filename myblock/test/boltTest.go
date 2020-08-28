@@ -32,8 +32,8 @@ func main() {
 		bucket := tx.Bucket([]byte("v1"))
 		god := bucket.Get([]byte("god"))
 		user := bucket.Get([]byte("user"))
-		fmt.Println(god)
-		fmt.Println(user)
+		fmt.Printf("%s/n",god)
+		fmt.Printf("%s/n",user)
 		return nil
 	})
 

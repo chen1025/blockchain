@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"crypto/sha256"
 	"encoding/binary"
+	"encoding/gob"
 	"log"
 	"time"
 )
@@ -52,6 +53,27 @@ func NewBlock(data string, prevHash []byte) *Block {
 	block.Nonce = u
 	block.Hash = hash
 	return &block
+}
+
+// 序列化
+func (b *Block) Serialize() []byte {
+	var buff bytes.Buffer
+	e := gob.NewEncoder(&buff)
+	err := e.Encode(b)
+	if err != nil {
+		panic(err)
+	}
+	return buff.Bytes()
+}
+
+func Deserialize(b []byte) Block {
+	var block Block
+	decoder := gob.NewDecoder(bytes.NewReader(b))
+	err := decoder.Decode(&block)
+	if err != nil {
+		panic(err)
+	}
+	return block
 }
 
 func setHash(block *Block) {

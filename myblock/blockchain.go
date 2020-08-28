@@ -1,15 +1,44 @@
 package main
 
+import (
+	"blockchain/bolt"
+	"log"
+)
+
 type BlockChain struct {
-	blocks []*Block
+	db   *bolt.DB
+	last []byte
 }
+
+const DbFile = "blockChain.db"
+const DbBucket = "dbBucket"
+const LastKey = "lastHash"
 
 func NewBlockChain() *BlockChain {
 	//生成 创世区块
-	block := GenerateGenesisBlock()
+	var lastHash []byte
+	db, err := bolt.Open(DbFile, 0600, nil)
+	if err != nil {
+		panic(err)
+	}
+	db.Update(func(tx *bolt.Tx) error {
+		bucket := tx.Bucket([]byte(DbBucket))
+		if bucket == nil {
+			//初始化
+			block := GenerateGenesisBlock()
+			bucket, _ = tx.CreateBucket([]byte(DbBucket))
+			bucket.Put([]byte(LastKey), block.Hash)
+			bucket.Put(block.Hash, block.Serialize())
+			lastHash = block.Hash
+		} else {
+			lastHash = bucket.Get([]byte(LastKey))
+		}
+		return nil
+	})
 	// 创建一个chain
 	return &BlockChain{
-		blocks: []*Block{block},
+		db:   db,
+		last: lastHash,
 	}
 }
 
@@ -18,10 +47,25 @@ func GenerateGenesisBlock() *Block {
 }
 
 func (chain *BlockChain) AddBlock(data string) {
-	//获取 父区块 hash
-	perv := chain.blocks[len(chain.blocks)-1]
+
 	//a. 创建新的区块
-	block := NewBlock(data, perv.Hash)
+	block := NewBlock(data, chain.last)
+	chain.last = block.Hash
 	//添加
-	chain.blocks = append(chain.blocks, block)
+	chain.db.Update(func(tx *bolt.Tx) error {
+		bucket := tx.Bucket([]byte(DbBucket))
+		if bucket == nil {
+			log.Panic("bucket not exist")
+		}
+		bucket.Put([]byte(LastKey), block.Hash)
+		bucket.Put(block.Hash, block.Serialize())
+		return nil
+	})
+}
+
+func (chain *BlockChain) NewIterator() *Iterator {
+	return &Iterator{
+		db:       chain.db,
+		nextHash: chain.last,
+	}
 }

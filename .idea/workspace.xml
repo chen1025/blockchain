@@ -24,6 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1gfjiWBsDh3JCdjJxvokirYJ8OG" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -43,6 +46,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/block" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
@@ -58,6 +62,7 @@
   <component name="RunManager">
     <configuration name="go build blockchain/myblock" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="blockchain" />
+      <working_directory value="$PROJECT_DIR$/" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/myblock/pow.go" />
       <package value="blockchain/myblock" />
@@ -75,11 +80,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
     <state x="184" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598516410178">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
     <state x="184" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.791@0.23.1440.791" timestamp="1598516410178" />
+    <state x="460" y="227" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598516756113">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state x="460" y="227" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.791@0.23.1440.791" timestamp="1598516756113" />
     <state x="417" y="65" key="#go_build_blockchain/block" timestamp="1598516190499">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
@@ -92,22 +104,22 @@
       <screen x="0" y="23" width="1440" height="791" />
     </state>
     <state x="417" y="65" key="#go_build_blockchain/myblock_(1)/0.23.1440.791@0.23.1440.791" timestamp="1598516402342" />
-    <state width="1398" height="202" key="GridCell.Tab.0.bottom" timestamp="1598516477921">
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom" timestamp="1598516829119">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.791@0.23.1440.791" timestamp="1598516477921" />
-    <state width="1398" height="202" key="GridCell.Tab.0.center" timestamp="1598516477920">
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.791@0.23.1440.791" timestamp="1598516829119" />
+    <state width="1398" height="202" key="GridCell.Tab.0.center" timestamp="1598516829118">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.791@0.23.1440.791" timestamp="1598516477920" />
-    <state width="1398" height="202" key="GridCell.Tab.0.left" timestamp="1598516477919">
+    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.791@0.23.1440.791" timestamp="1598516829118" />
+    <state width="1398" height="202" key="GridCell.Tab.0.left" timestamp="1598516829114">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.791@0.23.1440.791" timestamp="1598516477919" />
-    <state width="1398" height="202" key="GridCell.Tab.0.right" timestamp="1598516477920">
+    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.791@0.23.1440.791" timestamp="1598516829114" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right" timestamp="1598516829119">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.791@0.23.1440.791" timestamp="1598516477920" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.791@0.23.1440.791" timestamp="1598516829119" />
     <state x="229" y="57" key="SettingsEditor" timestamp="1598516467333">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
