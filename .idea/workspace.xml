@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cfb51c1-d17f-4f52-8e82-d5bb53db5ef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myblock/proofToWord.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/block.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/blockchain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/pow.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wallet.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run.sh.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkBalance.sh" beforeDir="false" afterPath="$PROJECT_DIR$/checkBalance.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/block.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/blockchain.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/cli.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/cli.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/commandLine.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/commandLine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/iterator.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/iterator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/pow.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/proofToWord.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/proofToWord.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/utxo.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/utxo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/wallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/wallet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblock/wallets.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/wallets.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transfer.sh" beforeDir="false" afterPath="$PROJECT_DIR$/transfer.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +59,22 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/block" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/myblock" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/myblock" />
+      <recent name="$PROJECT_DIR$/myblock/test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/myblock" />
       <recent name="$PROJECT_DIR$/block" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build blockchain/myblock">
     <configuration name="go build blockchain/myblock" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="blockchain" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -68,9 +83,19 @@
       <package value="blockchain/myblock" />
       <method v="2" />
     </configuration>
+    <configuration name="go build blockchain/myblock/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="blockchain" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/myblock/test/boltTest.go" />
+      <package value="blockchain/myblock/test" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build blockchain/myblock" />
+        <item itemvalue="Go Build.go build blockchain/myblock/test" />
       </list>
     </recent_temporary>
   </component>
@@ -88,41 +113,49 @@
       <screen x="0" y="23" width="1440" height="791" />
     </state>
     <state x="184" y="80" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.791@0.23.1440.791" timestamp="1598516410178" />
-    <state x="460" y="227" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598516756113">
+    <state x="460" y="227" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598584610402">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state x="460" y="227" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.791@0.23.1440.791" timestamp="1598516756113" />
+    <state x="460" y="227" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.791@0.23.1440.791" timestamp="1598584610402" />
     <state x="417" y="65" key="#go_build_blockchain/block" timestamp="1598516190499">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
     <state x="417" y="65" key="#go_build_blockchain/block/0.23.1440.791@0.23.1440.791" timestamp="1598516190499" />
-    <state x="417" y="65" key="#go_build_blockchain/myblock" timestamp="1598516473830">
+    <state x="417" y="65" key="#go_build_blockchain/myblock" timestamp="1598520097287">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state x="417" y="65" key="#go_build_blockchain/myblock/0.23.1440.791@0.23.1440.791" timestamp="1598516473830" />
+    <state x="417" y="65" key="#go_build_blockchain/myblock/0.23.1440.791@0.23.1440.791" timestamp="1598520097287" />
     <state x="417" y="65" key="#go_build_blockchain/myblock_(1)" timestamp="1598516402342">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
     <state x="417" y="65" key="#go_build_blockchain/myblock_(1)/0.23.1440.791@0.23.1440.791" timestamp="1598516402342" />
-    <state width="1398" height="202" key="GridCell.Tab.0.bottom" timestamp="1598516829119">
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom" timestamp="1598882383954">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.791@0.23.1440.791" timestamp="1598516829119" />
-    <state width="1398" height="202" key="GridCell.Tab.0.center" timestamp="1598516829118">
+    <state width="1398" height="202" key="GridCell.Tab.0.bottom/0.23.1440.791@0.23.1440.791" timestamp="1598882383954" />
+    <state width="1398" height="202" key="GridCell.Tab.0.center" timestamp="1598882383952">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.791@0.23.1440.791" timestamp="1598516829118" />
-    <state width="1398" height="202" key="GridCell.Tab.0.left" timestamp="1598516829114">
+    <state width="1398" height="202" key="GridCell.Tab.0.center/0.23.1440.791@0.23.1440.791" timestamp="1598882383952" />
+    <state width="1398" height="202" key="GridCell.Tab.0.left" timestamp="1598882383951">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.791@0.23.1440.791" timestamp="1598516829114" />
-    <state width="1398" height="202" key="GridCell.Tab.0.right" timestamp="1598516829119">
+    <state width="1398" height="202" key="GridCell.Tab.0.left/0.23.1440.791@0.23.1440.791" timestamp="1598882383951" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right" timestamp="1598882383953">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.791@0.23.1440.791" timestamp="1598516829119" />
+    <state width="1398" height="202" key="GridCell.Tab.0.right/0.23.1440.791@0.23.1440.791" timestamp="1598882383953" />
     <state x="229" y="57" key="SettingsEditor" timestamp="1598516467333">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
     <state x="229" y="57" key="SettingsEditor/0.23.1440.791@0.23.1440.791" timestamp="1598516467333" />
+    <state x="420" y="173" width="598" height="490" key="find.popup" timestamp="1598871338095">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state x="420" y="173" width="598" height="490" key="find.popup/0.23.1440.791@0.23.1440.791" timestamp="1598871338095" />
+    <state x="385" y="138" key="search.everywhere.popup" timestamp="1598966675555">
+      <screen x="0" y="23" width="1440" height="791" />
+    </state>
+    <state x="385" y="138" key="search.everywhere.popup/0.23.1440.791@0.23.1440.791" timestamp="1598966675555" />
   </component>
 </project>

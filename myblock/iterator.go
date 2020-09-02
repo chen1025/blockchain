@@ -1,7 +1,7 @@
 package main
 
 import (
-	"blockchain/bolt"
+	"blockchain/lib/bolt"
 	"log"
 )
 

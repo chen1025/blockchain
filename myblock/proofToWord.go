@@ -37,7 +37,7 @@ func (p *ProofToWork) Run() ([]byte, uint64) {
 			IntToByte(block.TimeStamp),
 			IntToByte(block.Difficulty),
 			IntToByte(nonce),
-			block.Data,
+			//block.Data,
 		}
 		join := bytes.Join(blockInfo, []byte{})
 		sum256 := sha256.Sum256(join)

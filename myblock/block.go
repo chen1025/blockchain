@@ -24,8 +24,8 @@ type Block struct {
 	Nonce uint64
 	//a. 当前区块哈希,正常比特币区块中没有当前区块的哈希，我们为了是方便做了简化！
 	Hash []byte
-	//b. 数据
-	Data []byte
+	//b. 数据 交易记录
+	Transactions []*Transaction
 }
 
 func IntToByte(in uint64) []byte {
@@ -37,17 +37,18 @@ func IntToByte(in uint64) []byte {
 	return bu.Bytes()
 }
 
-func NewBlock(data string, prevHash []byte) *Block {
+func NewBlock(t []*Transaction, prevHash []byte) *Block {
 	block := Block{
-		Version:    0,
-		PrevHash:   prevHash,
-		MerkleRoot: []byte{},
-		TimeStamp:  uint64(time.Now().Unix()),
-		Difficulty: 0,
-		Nonce:      0,
-		Hash:       []byte{},
-		Data:       []byte(data),
+		Version:      0,
+		PrevHash:     prevHash,
+		TimeStamp:    uint64(time.Now().Unix()),
+		Difficulty:   0,
+		Nonce:        0,
+		Hash:         []byte{},
+		Transactions: t,
 	}
+	// 计算出默克树
+	block.MerkleRoot = block.MakeMerkleRoot()
 	pow := NewPOW(&block)
 	hash, u := pow.Run()
 	block.Nonce = u
@@ -84,9 +85,22 @@ func setHash(block *Block) {
 		IntToByte(block.TimeStamp),
 		IntToByte(block.Difficulty),
 		IntToByte(block.Nonce),
-		block.Data,
 	}
 	join := bytes.Join(blockInfo, []byte{})
 	sum256 := sha256.Sum256(join)
 	block.Hash = sum256[:]
+}
+
+// 简单 对数据进行 hash
+func (b *Block) MakeMerkleRoot() []byte {
+	// 对数据进行计算
+	transactions := b.Transactions
+	var buffer bytes.Buffer
+	encoder := gob.NewEncoder(&buffer)
+	err := encoder.Encode(transactions)
+	if err != nil {
+		log.Panic(err)
+	}
+	sum256 := sha256.Sum256(buffer.Bytes())
+	return sum256[:]
 }
