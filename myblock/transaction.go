@@ -161,7 +161,7 @@ func (t *Transaction) sign(prevTXs map[string]Transaction, key *ecdsa.PrivateKey
 			log.Panic("引用的交易无效")
 		}
 		// 对交易的每个input 进行签名
-		txCopy.Inputs[i].PubKey = prevTXs[string(input.TXid)].Outputs[i].PubKayHash
+		txCopy.Inputs[i].PubKey = prevTX.Outputs[input.Index].PubKayHash
 
 		//所需要的三个数据都具备了，开始做哈希处理
 		//3. 生成要签名的数据。要签名的数据一定是哈希值
