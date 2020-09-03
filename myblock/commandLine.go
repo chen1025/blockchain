@@ -8,32 +8,23 @@ func (cli *CLI) AddBlock(data string) {
 }
 
 func (cli *CLI) PrintBlockChain() {
-
 	bc := cli.blockChain
 	iterator := bc.NewIterator()
-	var i int
 	for {
 		block := iterator.Next()
+		for _, tx := range block.Transactions{
+			fmt.Println(tx)
+		}
 		if len(iterator.nextHash) == 0 {
 			break
 		}
-		fmt.Printf("======== 当前区块高度： %d ========\n", i)
-		fmt.Printf("当前版本： %v\n", block.Version)
-		fmt.Printf("前区块哈希值： %x\n", block.PrevHash)
-		fmt.Printf("当前MerkleRoot： %x\n", block.MerkleRoot)
-		fmt.Printf("区块TimeStamp :  %v\n", block.TimeStamp)
-		fmt.Printf("当前区块Difficulty： %x\n", block.Difficulty)
-		fmt.Printf("区块Nonce:  %v\n", block.Nonce)
-		fmt.Printf("当前区块哈希值： %x\n", block.Hash)
-		fmt.Printf("区块数据 :%s\n", block.Transactions[0].Inputs[0].Sig)
-		i++
 	}
-
 }
 
 func (cli *CLI) getBalance(address string) float64 {
 	total := 0.0
-	utxo := cli.blockChain.FindUTXOs(address)
+	key := getPubKeyHashByAddress(address)
+	utxo := cli.blockChain.FindUTXOs(key)
 	for _, o := range utxo {
 		total += o.Amount
 	}

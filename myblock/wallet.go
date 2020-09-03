@@ -7,6 +7,7 @@ import (
 	"crypto/elliptic"
 	"crypto/rand"
 	"crypto/sha256"
+	"fmt"
 	"log"
 )
 
@@ -64,4 +65,17 @@ func CheckSum(data []byte) []byte {
 	sum1 := sha256.Sum256(data)
 	sum2 := sha256.Sum256(sum1[:])
 	return sum2[:4]
+}
+
+// 获取地址的公钥hash
+func getPubKeyHashByAddress(address string) []byte {
+	if len(address) != 34 {
+		fmt.Printf("无效的地址：%s/n",address)
+		return nil
+	}
+	// base58
+	code := base58.Decode(address)
+	//截 除最后4个  和 第一个 version
+	return code[1 : len(code)-4]
+
 }

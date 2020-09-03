@@ -2,7 +2,7 @@ package main
 
 type UTXO struct {
 	Amount  float64
-	PubHash string
+	PubHash []byte
 	Vout    uint64
 	TXid    []byte
 }
