@@ -125,7 +125,8 @@ func (chain *BlockChain) FindUTXOs(pubHash []byte) []UTXO {
 			// 添加以使用过的集合 旷工打包区块不需要
 			if !tx.IsCoinBase() {
 				for _, in := range tx.Inputs {
-					if bytes.Equal(in.PubKey,pubHash){
+					pubKeyHash := HashPublicKey(in.PubKey)
+					if bytes.Equal(pubKeyHash,pubHash){
 						spentOutputs[string(in.TXid)] = append(spentOutputs[string(in.TXid)], in.Index)
 					}
 				}
