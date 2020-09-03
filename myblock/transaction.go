@@ -67,6 +67,7 @@ func NewCoinBaseTX(address, data string) *Transaction {
 	}
 	out := NewTXOutput(reward, address)
 	trans := Transaction{
+		TXID:    []byte{},
 		Inputs:  []Input{in},
 		Outputs: []Output{*out},
 	}

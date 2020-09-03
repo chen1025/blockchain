@@ -58,7 +58,7 @@ func (chain *BlockChain) AddBlock(t []*Transaction) {
 		flag := chain.VerifyTransaction(tx)
 		if !flag {
 			//
-			fmt.Printf("存在无效交易:%s/n",string(tx.TXID))
+			fmt.Printf("存在无效交易:%x/n",tx.TXID)
 			return
 		}
 	}

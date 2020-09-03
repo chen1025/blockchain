@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblock/blockchain.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/blockchain.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblock/commandLine.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/commandLine.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblock/pow.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/pow.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblock/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/transaction.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblock/utxo.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/utxo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myblock/wallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/myblock/wallet.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet.bat" beforeDir="false" afterPath="$PROJECT_DIR$/wallet.bat" afterDir="false" />
     </list>
@@ -155,10 +153,10 @@
       <screen x="0" y="23" width="1440" height="791" />
     </state>
     <state x="100" y="123" width="1240" height="591" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.791@0.23.1440.791" timestamp="1599139692497" />
-    <state x="420" y="173" width="598" height="490" key="find.popup" timestamp="1599135909823">
+    <state x="420" y="173" width="598" height="490" key="find.popup" timestamp="1599140710819">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
-    <state x="420" y="173" width="598" height="490" key="find.popup/0.23.1440.791@0.23.1440.791" timestamp="1599135909823" />
+    <state x="420" y="173" width="598" height="490" key="find.popup/0.23.1440.791@0.23.1440.791" timestamp="1599140710819" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1599139696831">
       <screen x="0" y="23" width="1440" height="791" />
     </state>
@@ -167,5 +165,16 @@
       <screen x="0" y="23" width="1440" height="791" />
     </state>
     <state x="385" y="138" key="search.everywhere.popup/0.23.1440.791@0.23.1440.791" timestamp="1598966675555" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/myblock/commandLine.go</url>
+          <line>80</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

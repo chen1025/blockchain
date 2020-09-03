@@ -69,7 +69,7 @@ func CheckSum(data []byte) []byte {
 
 // 获取地址的公钥hash
 func getPubKeyHashByAddress(address string) []byte {
-	if len(address) != 34 {
+	if len(address) < 4 {
 		fmt.Printf("无效的地址：%s/n",address)
 		return nil
 	}
